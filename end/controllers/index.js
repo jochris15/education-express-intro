@@ -5,7 +5,6 @@ class Controller {
         try {
             const { search } = req.query;
             const data = await Model.read(search);
-            console.log(data);
 
             res.send(data)
         } catch (error) {
