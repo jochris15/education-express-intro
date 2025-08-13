@@ -9,5 +9,5 @@ app.get('/games', Controller.read)
 app.get('/games/:id', Controller.detail)
 
 app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
+    console.log(`Server is running at http://localhost:${port}`)
 })
