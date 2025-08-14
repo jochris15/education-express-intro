@@ -40,9 +40,11 @@ Route handlers adalah fungsi yang akan dieksekusi ketika permintaan diterima pad
 Method routing adalah cara untuk menentukan bagaimana aplikasi kita akan menangani permintaan HTTP berdasarkan metode yang digunakan. Berikut adalah beberapa metode routing yang umum digunakan:
 - `app.get()`: Digunakan untuk menangani permintaan HTTP GET (Read).
 - `app.post()`: Digunakan untuk menangani permintaan HTTP POST (Create).
-- `app.put()`: Digunakan untuk menangani permintaan HTTP PUT (Update).
+- `app.put()`: Digunakan untuk menangani permintaan HTTP PUT (Update). 
 - `app.patch()`: Digunakan untuk menangani permintaan HTTP PATCH (Partial Update).
 - `app.delete()`: Digunakan untuk menangani permintaan HTTP DELETE (Delete).
+
+Walaupun method ada banyak, perlu diperhatikan bahwa HTML form hanya dapat mengirimkan permintaan dengan metode `GET` dan `POST`. Oleh karena itu, sementara untuk operasi `Create` dan `Update` kita dapat menggunakan metode `POST`, sedangkan untuk operasi `Read` & `Delete` kita dapat menggunakan metode `GET` karena nanti kita akan menggunakan HTML untuk tampilannya.
 
 ### [Route Paths](https://expressjs.com/en/guide/routing.html#route-paths)
 Route paths adalah URL yang akan diakses oleh pengguna untuk berinteraksi dengan aplikasi kita. Kita bahkan dapat menggunakan parameter dinamis dalam route path untuk menangani permintaan yang berbeda berdasarkan nilai yang diberikan oleh pengguna.
