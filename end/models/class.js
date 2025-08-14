@@ -9,11 +9,8 @@ class Game {
     }
 
     get formattedReleaseDate() {
-        return new Date(this.releaseDate).toLocaleDateString('us-US', {
-            year: 'numeric',
-            month: 'short',
-            day: 'numeric'
-        });
+        const date = new Date(this.releaseDate)
+        return date.toISOString().split('T')[0]
     }
 }
 
