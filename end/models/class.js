@@ -7,6 +7,14 @@ class Game {
         this.developer = developer;
         this.genre = genre;
     }
+
+    get formattedReleaseDate() {
+        return new Date(this.releaseDate).toLocaleDateString('us-US', {
+            year: 'numeric',
+            month: 'short',
+            day: 'numeric'
+        });
+    }
 }
 
 module.exports = Game;
