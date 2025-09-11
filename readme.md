@@ -66,7 +66,7 @@ app.get('/users/:id', (req, res) => {
 
 // Route path with query parameters
 // path : http://localhost:3000/users?search=John
-app.get('/search', (req, res) => {
+app.get('/users', (req, res) => {
   const query = req.query.search // Access the query parameter from the request
   res.send(`Search results for: ${query}`)
 })
