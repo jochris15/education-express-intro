@@ -73,7 +73,7 @@ app.get('/users', (req, res) => {
 ```
 
 ## Demo
-Buatlah sebuah aplikasi Express & Node-postgres untuk mengelola daftar game. Kita juga akan menggunakan `nodemon` supaya perubahan pada aplikasi kita dapat langsung terlihat tanpa perlu restart server.
+Buatlah sebuah aplikasi Express & Node-postgres untuk mengelola daftar game. Kita juga akan menggunakan `node --watch <nama file utama>`  untuk menjalankan aplikasinya supaya perubahan pada aplikasi kita dapat langsung terlihat tanpa perlu restart server.
 
 ### Setup
 Database : game_app
@@ -81,7 +81,6 @@ Database : game_app
 ```
 npm init -y
 npm i express pg
-npm i -D nodemon
 touch .gitignore
 ```
 
